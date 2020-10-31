@@ -1,101 +1,92 @@
-#container p {
-    width: 60rem;
-    margin-bottom: 1rem;
-    font-size: 14px;
+#container {
+    line-height: 3rem;
+    width: 70%;
+    height: 100%;
 }
-#container img {
-    margin: 2rem 0rem;
-    width: 969px;
-    height: 470px;
+#container #recipebox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#container #recipebox #textContent {
+    width: 80%;
+}
+#container #recipebox #boxinfo {
+    text-align: center;
+    border-radius: 10px;
+    border-left: 1px solid #dfdfdfcc;
+    border-right: 1px solid #dfdfdfcc;
+    border-bottom: 4px solid #dfdfdfcc;
+    height: 100%;
+}
+#container #recipebox #boxinfo .grid {
+    flex-direction: column;
+    display: flex;
+    padding: 1rem;
+}
+#container #recipebox #boxinfo .grid h4 {
+    font-size: 1.4rem;
+}
+#container #recipebox #boxinfo .grid .indicativeText {
+    color: #eba851;
+}
+#container #recipebox #boxinfo .grid span {
+    font-size: 1.2rem;
+}
+#container #recipebox #boxinfo i {
+    float: left;
+}
+#container #recipebox #boxinfo .grid:first-of-type{
+    order: 1;
+    border-bottom: 1px solid #dfdfdfcc;
+}
+#container #recipebox #boxinfo .grid:first-of-type i {
+    color: #eba851;
+}
+#container #instructions {  
+    width: 80%;
 }
 #container h1 {
-    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 10rem;
 }
-#container .description {
-    color: #4F4F4F;
+#container p {
+    line-height: 2rem;
     margin-left: 2rem;
-    font-style: italic;
-    font-size: 14px;
-    line-height: 17px;
 }
-#container h2,
+#container #recipebox #textContent input[type="checkbox"] {
+    float: left;
+}
+#container #recipebox #textContent p {
+    margin-left: 3rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+}
+#container #recipebox #textContent h3 {
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+#container #recipebox #textContent h2,
 #container #instructions h2 {
-    
-    margin: 2rem 0rem 2rem 0rem;
-}
-#container #content .ingredient {
-    margin: 2rem 0rem;
-    font-style: italic;
-    font-size: 18px;
-}
-#container #content .boxinfo {
-    position: absolute;
-    left: 70%;
-    line-height: 25px;
-    text-align: center;
-    margin: auto;
-    width: 200px;
-    height: 270px;
-    border-bottom: 3px solid #e0e0e0;
-    border-left: 1px solid #e0e0e0;
-    border-right: 1px solid #e0e0e0;
-    border-radius: 1rem;
-}
-#container #content i {
-    color: #4b4b4b;
-    position: absolute;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-}
-#container #content i:first-of-type {
-    color: #eba851;
-}
-#container #content .boxinfo h3{
-    font-size: 1.2rem;
-    color: #9e9e9e;
-}
-#container #content .boxinfo span{
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
-    margin-bottom: 20px;
-    font-size: 15px;
-}
-#container #content .boxinfo span:first-of-type{
-    color: #eba851;
-}
-#container #content label {
-    font-size: 14px;
-}
-#container #content input[type="checkbox"] {
-    margin-bottom: 1rem;
-    margin-right: 0.5rem;
-    width: 20px;
-    height: 20px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 #container #instructions p {
-    margin-left: 5rem;
-    margin-bottom: 5rem;
+    margin-left: 6rem;
+    margin-bottom: 4rem;
 }
 #container #instructions .boxed {
-    position: absolute;
+    float: left;
     border-radius: 5px;
-    width: 35px;
-    height: 35px;
+    width: 3.5rem;
+    height: 3.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #eba851;
+    background-color: #eba851;;
     color: white;
-    font-size: 20px;
-}
-#container .font ,
-#container .font2{
-    color: #4b4b4b;
-    font-size: 12px;
-}
-#container .font2 {
-    margin-top: 5rem;
-    text-align: center;
+    font-size: 2rem;
+    min-width: 25px;
 }

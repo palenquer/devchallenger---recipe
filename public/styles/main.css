@@ -1,34 +1,62 @@
 :root{
-    font-size:60%
+    font-size:62.5%
 }
-@media (max-width: 699px) {
-    :root {
-        font-size: 40%
-    }
-}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
-    height: 210vh;
-}
+
 body {
+    display: flex;
+    justify-content: center;
     font-weight: 500;
     font-family: Poppins;
     font-size: 1.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-#container {
-    max-width: 90rem;
-    height: 210vh;
-    width: 90vw;
+
+img {
+    margin: 2rem 0rem;
+    width:100%;
+    height:50%;
 }
-@media(min-width: 700px) {
+
+@media (max-width: 854px) {
     :root {
-        font-size: 62.5% /* 1 rem = 10px */
+        font-size: 40%
+    }
+    #container #recipebox {
+        flex-direction: column;
+    }
+    #container #recipebox #boxinfo {
+        align-self: center;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        min-width: 220px;
+        width: 40%;
+        margin-left: 0rem;
+    }
+    #container #recipebox #textContent input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+    }
+    #container #recipebox #boxinfo .grid{
+        flex-grow: 4;
+    }
+}
+@media (min-width: 855px) {
+    #container #recipebox #boxinfo {
+        min-width: 123px;
+        width: 13%;
+    }
+    #container #recipebox {
+        width: 17%;
+        min-width: 150px;
+        flex-direction: row-reverse;
+    }
+    #container #recipebox #textContent input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
     }
 }
