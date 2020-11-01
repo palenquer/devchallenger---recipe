@@ -24,7 +24,7 @@ img {
 
 @media (max-width: 854px) {
     :root {
-        font-size: 40%
+        font-size: 47%
     }
     #container #recipebox {
         flex-direction: column;
